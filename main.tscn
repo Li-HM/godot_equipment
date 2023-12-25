@@ -1,0 +1,51 @@
+[gd_scene load_steps=2 format=3 uid="uid://c2d75m8m4o7xq"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_d63xd"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_d63xd")
+
+[node name="get_items" type="Button" parent="."]
+offset_left = 77.0
+offset_top = 424.0
+offset_right = 149.0
+offset_bottom = 455.0
+text = "获得物品"
+
+[node name="view_data" type="Button" parent="."]
+offset_left = 214.0
+offset_top = 422.0
+offset_right = 286.0
+offset_bottom = 453.0
+text = "查看数组"
+
+[node name="open_ba" type="Button" parent="."]
+offset_left = 83.0
+offset_top = 503.0
+offset_right = 155.0
+offset_bottom = 534.0
+text = "打开背包"
+
+[node name="close_ba" type="Button" parent="."]
+offset_left = 213.0
+offset_top = 503.0
+offset_right = 285.0
+offset_bottom = 534.0
+text = "关闭背包"
+
+[node name="my_equipment" type="Panel" parent="."]
+offset_left = 518.0
+offset_top = 130.0
+offset_right = 731.0
+offset_bottom = 414.0
+
+[node name="my_backpack" type="Panel" parent="."]
+offset_left = 860.0
+offset_top = 177.0
+offset_right = 1092.0
+offset_bottom = 420.0
+
+[connection signal="button_down" from="get_items" to="." method="_on_get_items_button_down"]
+[connection signal="button_down" from="view_data" to="." method="_on_view_data_button_down"]
+[connection signal="button_down" from="open_ba" to="." method="_on_open_ba_button_down"]
+[connection signal="button_down" from="close_ba" to="." method="_on_close_ba_button_down"]

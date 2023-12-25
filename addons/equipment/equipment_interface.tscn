@@ -1,0 +1,131 @@
+[gd_scene load_steps=6 format=3 uid="uid://dpafwlpxphr8e"]
+
+[ext_resource type="Script" path="res://addons/equipment/equipment_interface.gd" id="1_d8ol6"]
+[ext_resource type="Texture2D" uid="uid://cj18jwn30fflw" path="res://addons/equipment/images/background.png" id="2_6vdp2"]
+[ext_resource type="Texture2D" uid="uid://oeq0gs5qfqb3" path="res://icon.svg" id="3_c6wty"]
+[ext_resource type="Texture2D" uid="uid://b8tkpewv4hdcn" path="res://addons/equipment/images/grid_background.png" id="4_exacr"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qith1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_c6wty")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="EquipmentInterface" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -952.0
+offset_bottom = -348.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_d8ol6")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="background" type="TextureRect" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_6vdp2")
+expand_mode = 1
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(106, 147)
+scale = Vector2(0.644531, 1.48828)
+sprite_frames = SubResource("SpriteFrames_qith1")
+
+[node name="grid_node" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 24.0
+offset_right = 53.0
+offset_bottom = 64.0
+texture = ExtResource("4_exacr")
+expand_mode = 1
+metadata/subclass = "weapon"
+metadata/index = 0
+metadata/is_equ = false
+
+[node name="Label" type="Label" parent="grid_node"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.815686, 0.815686, 0.815686, 1)
+theme_override_font_sizes/font_size = 14
+text = "武器"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="grid_node2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 89.0
+offset_right = 54.0
+offset_bottom = 129.0
+texture = ExtResource("4_exacr")
+expand_mode = 1
+metadata/subclass = "helmet"
+metadata/index = 1
+metadata/is_equ = false
+
+[node name="Label" type="Label" parent="grid_node2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.815686, 0.815686, 0.815686, 1)
+theme_override_font_sizes/font_size = 14
+text = "头盔"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="grid_node3" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 152.0
+offset_right = 54.0
+offset_bottom = 192.0
+texture = ExtResource("4_exacr")
+expand_mode = 1
+metadata/subclass = "Armor"
+metadata/index = 2
+metadata/is_equ = false
+
+[node name="Label" type="Label" parent="grid_node3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.815686, 0.815686, 0.815686, 1)
+theme_override_font_sizes/font_size = 14
+text = "护甲"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

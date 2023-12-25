@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://dv7vkhvcyobcd"]
+
+[ext_resource type="Script" path="res://addons/backpack_grid/backpack_node.gd" id="1_8mir0"]
+
+[node name="backpack_background" type="TextureRect"]
+script = ExtResource("1_8mir0")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 0
+offset_right = 8.0
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="ScrollContainer"]
+layout_mode = 2
+
+[connection signal="gui_input" from="ScrollContainer" to="." method="_on_scroll_container_gui_input"]

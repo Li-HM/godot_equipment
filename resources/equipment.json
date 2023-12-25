@@ -1,0 +1,200 @@
+[
+  {
+	"name": "阔刀",
+	"type": "equipment",
+	"subclass": "weapon",
+	"power": "3",
+	"armor": "0",
+	"hp": "0",
+	"quality": "普通",
+	"icon": "010002",
+	"describe": "常见的武器"
+  },
+  {
+	"name": "双刃剑",
+	"type": "equipment",
+	"subclass": "weapon",
+	"power": "2",
+	"armor": "0",
+	"hp": "0",
+	"quality": "普通",
+	"icon": "010003",
+	"describe": "唯快不破"
+  },
+  {
+	"name": "斧头",
+	"type": "equipment",
+	"subclass": "weapon",
+	"power": "4",
+	"armor": "0",
+	"hp": "0",
+	"quality": "普通",
+	"icon": "010004",
+	"describe": "力破千军"
+  },
+  {
+	"name": "长枪",
+	"type": "equipment",
+	"subclass": "weapon",
+	"power": "6",
+	"armor": "0",
+	"hp": "0",
+	"quality": "普通",
+	"icon": "010005",
+	"describe": "冷兵器之王"
+  },
+  {
+	"name": "步枪",
+	"type": "equipment",
+	"subclass": "weapon",
+	"power": "6",
+	"armor": "0",
+	"hp": "0",
+	"quality": "普通",
+	"icon": "010006",
+	"describe": "这是一把步枪"
+  },
+  {
+	"name": "激光枪",
+	"type": "equipment",
+	"subclass": "weapon",
+	"power": "5",
+	"armor": "0",
+	"hp": "0",
+	"quality": "普通",
+	"icon": "010007",
+	"describe": "伤害很高，需要时间散热"
+  },
+  {
+	"name": "霰弹枪",
+	"type": "equipment",
+	"subclass": "weapon",
+	"power": "8",
+	"armor": "0",
+	"hp": "0",
+	"quality": "普通",
+	"icon": "010008",
+	"describe": "一把喷子"
+  },
+  {
+	"name": "手雷",
+	"type": "equipment",
+	"subclass": "weapon",
+	"power": "10",
+	"armor": "0",
+	"hp": "0",
+	"quality": "普通",
+	"icon": "010009",
+	"describe": "一炸一大片"
+  },
+  {
+	"name": "绿色的帽子",
+	"type": "equipment",
+	"subclass": "helmet",
+	"power": "0",
+	"armor": "0",
+	"hp": "0",
+	"quality": "普通",
+	"icon": "010010",
+	"describe": "好看"
+  },
+  {
+	"name": "白色的帽子",
+	"type": "equipment",
+	"subclass": "helmet",
+	"power": "0",
+	"armor": "0",
+	"hp": "0",
+	"quality": "普通",
+	"icon": "010011",
+	"describe": "很好看"
+  },
+  {
+	"name": "开天裤",
+	"type": "equipment",
+	"subclass": "pants",
+	"power": "0",
+	"armor": "0",
+	"hp": "0",
+	"quality": "普通",
+	"icon": "010012",
+	"describe": "什么鬼啊"
+  },
+  {
+	"name": "牛马裤",
+	"type": "equipment",
+	"subclass": "pants",
+	"power": "0",
+	"armor": "0",
+	"hp": "0",
+	"quality": "普通",
+	"icon": "010013",
+	"describe": "穿上它，你感觉自己像牛马"
+  },
+  {
+	"name": "草鞋",
+	"type": "equipment",
+	"subclass": "shoe",
+	"power": "0",
+	"armor": "0",
+	"hp": "0",
+	"quality": "普通",
+	"icon": "010014",
+	"describe": "你与这片大地多了一层隔阂"
+  },
+  {
+	"name": "皮靴",
+	"type": "equipment",
+	"subclass": "shoe",
+	"power": "0",
+	"armor": "0",
+	"hp": "0",
+	"quality": "普通",
+	"icon": "010015",
+	"describe": "能舒服地跑起来了"
+  },
+  {
+	"name": "蛇皮带",
+	"type": "equipment",
+	"subclass": "belt",
+	"power": "0",
+	"armor": "0",
+	"hp": "5",
+	"quality": "普通",
+	"icon": "010016",
+	"describe": "1"
+  },
+  {
+	"name": "牛皮带",
+	"type": "equipment",
+	"subclass": "belt",
+	"power": "0",
+	"armor": "0",
+	"hp": "3",
+	"quality": "普通",
+	"icon": "010017",
+	"describe": "2"
+  },
+  {
+	"name": "布衣",
+	"type": "equipment",
+	"subclass": "Armor",
+	"power": "0",
+	"armor": "0",
+	"hp": "20",
+	"quality": "普通",
+	"icon": "010018",
+	"describe": "贴身衣物"
+  },
+  {
+	"name": "法袍",
+	"type": "equipment",
+	"subclass": "Armor",
+	"power": "0",
+	"armor": "0",
+	"hp": "30",
+	"quality": "普通",
+	"icon": "010019",
+	"describe": "asda"
+  }
+]

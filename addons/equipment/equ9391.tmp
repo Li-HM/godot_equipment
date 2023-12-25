@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://cet7vpynw82fm"]
+
+[ext_resource type="Script" path="res://addons/equipment/equ_button.gd" id="1_16k8r"]
+
+[node name="equ_button" type="Button"]
+text = "卸下"
+script = ExtResource("1_16k8r")
+
+[connection signal="button_down" from="." to="." method="_on_button_down"]
