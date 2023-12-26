@@ -34,7 +34,9 @@ func open_equipment(eq_Parent:Node):
 #关闭装备栏
 func close_equipment():
 	if equipment_status:
-		equipment_parent_node.get_child(-1).queue_free()
+		#删除装备栏节点和按钮节点
+		for node in equipment_parent_node.get_children():
+			node.queue_free()
 		equipment_status = false
 
 
@@ -56,6 +58,8 @@ func load_data_equipment():
 					if ResourceLoader.exists(equipment.equipment_icon_route + str(i["icon"]) + str(".png")):
 						items.get_node("TextureRect").texture = load(equipment.equipment_icon_route + str(i["icon"]) + str(".png"))
 					items.get_node("name").text = str(i["name"])
+					if backpack_grid.show_name == false:
+						items.get_node("name").text = ""
 #					如果图标上的数量或名称有位移或偏差，调整这里
 					items.get_node("name").size = Vector2(backpack_grid.item_grid_xp.x,26)
 					items.get_node("name").position = Vector2(0,backpack_grid.item_grid_xp.y-26)

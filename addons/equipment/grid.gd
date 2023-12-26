@@ -16,7 +16,6 @@ func _gui_input(event):
 				popup_button()
 
 
-
 #鼠标进入装备栏的格子
 func _on_mouse_entered():
 	if self.get_meta("is_equ"):
@@ -24,12 +23,16 @@ func _on_mouse_entered():
 		var attribute = preload("res://addons/backpack_grid/item_info.tscn").instantiate()
 		get_node("/root/backpack_grid").add_child(attribute)
 		attribute.global_position = self.global_position + backpack_grid.item_grid_xp/1.3
-		attribute.z_index = backpack_grid.zz_index+1
+		attribute.z_index = backpack_grid.zz_index+3
 		for i in equipment.equipment_array[self.get_meta("index")]:
-			if i != "icon":
-				var type = attribute.get_node("BoxContainer/name").duplicate()
-				type.text = str(equipment.equipment_array[self.get_meta("index")][i])
-				attribute.get_node("BoxContainer").add_child(type)
+			if i != "icon" :
+				#把默认的栏目设置为name
+				if i == "name" :
+					attribute.get_node("BoxContainer/name").text = equipment.equipment_array[self.get_meta("index")][i]
+				else :
+					var type = attribute.get_node("BoxContainer/name").duplicate()
+					type.text = i +" : "+str(equipment.equipment_array[self.get_meta("index")][i])
+					attribute.get_node("BoxContainer").add_child(type)
 		attribute.size.y = (26 + attribute.get_node("BoxContainer").get_child_count() * 26)
 
 

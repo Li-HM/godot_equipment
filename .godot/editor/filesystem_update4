@@ -1,1 +1,10 @@
+res://addons/backpack_grid/item_info.tscn
 res://main.tscn
+res://addons/equipment/equipment_interface.tscn
+res://addons/equipment/grid.gd
+res://addons/equipment/plugin.cfg
+res://addons/equipment/README.md
+res://addons/equipment/equipment_func.gd
+res://addons/backpack_grid/item_node.tscn
+res://addons/backpack_grid/Parameter_function.gd
+res://README.md

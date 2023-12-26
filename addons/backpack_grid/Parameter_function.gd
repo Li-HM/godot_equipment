@@ -1,7 +1,6 @@
 extends Node
 
 #===========****以下定义背包参数****==========
-var backpack_position_xp:Vector2 = Vector2(700,100) #全局位置
 var zz_index:int = 100    #渲染层级，为保证背包可见性，应尽量使该值加大
 var grid_number:int = 100     #总格子的数量。注意，这个数值需要比你背包数组的长度大
 var r_grid_number:int = 5    #每行格子的数量
@@ -36,15 +35,11 @@ func open_backpack(parent_node:Node):
 	var backpack = preload("res://addons/backpack_grid/backpack_node.tscn").instantiate()
 	backpack.name = "backpack_background"
 	backpack_status = true
-	if parent_node == null:
-		get_node("/root/backpack_grid").add_child(backpack)
-		backpack.global_position = backpack_position_xp
-	else :
-		item_grid_xp.x = int(parent_node.size.x - r_grid_number * 4) / r_grid_number
-		item_grid_xp.y = parent_node.size.y / w_grid_number
-		backpack_parent_node = parent_node
-		backpack.size = parent_node.size
-		parent_node.add_child(backpack)
+	item_grid_xp.x = int(parent_node.size.x - r_grid_number * 4) / r_grid_number
+	item_grid_xp.y = parent_node.size.y / w_grid_number
+	backpack_parent_node = parent_node
+	backpack.size = parent_node.size
+	parent_node.add_child(backpack)
 #	设置背包背景图
 	backpack.texture = load(Background_image)
 #	设置背包控件的滚动条
