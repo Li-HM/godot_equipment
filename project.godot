@@ -24,3 +24,7 @@ equipment="*res://addons/equipment/equipment_func.gd"
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/backpack_grid/plugin.cfg", "res://addons/equipment/plugin.cfg")
+
+[filesystem]
+
+import/blender/enabled=false

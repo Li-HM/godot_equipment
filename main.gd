@@ -12,7 +12,6 @@ func _ready():
 		#print(静态数据)
 
 
-
 #获得物品
 func _on_get_items_button_down():
 	backpack_grid.get_items({"name":"叶子","type":"crops","number":"5","icon":"00001"})
@@ -31,6 +30,7 @@ func _on_get_items_button_down():
 		if i["name"] == "草鞋":
 			backpack_grid.get_items(i)
 
+
 #查看数据
 func _on_view_data_button_down():
 	print("=======背包数组========")
@@ -39,12 +39,15 @@ func _on_view_data_button_down():
 	print("=======身上装备数组========")
 	print(equipment.equipment_array)
 
+
 #打开背包
 func _on_open_ba_button_down():
 	backpack_grid.open_backpack($my_backpack)
 	equipment.open_equipment($my_equipment)
 
+
 #关闭背包
 func _on_close_ba_button_down():
 	backpack_grid.close_backpack()
 	equipment.close_equipment()
+
